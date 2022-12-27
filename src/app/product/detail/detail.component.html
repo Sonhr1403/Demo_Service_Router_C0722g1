@@ -1,0 +1,7 @@
+<h1>Detail Product</h1>
+<h4>Name</h4> <p>{{product.name}}</p>
+<h4>Price</h4> <p>{{product.price}}</p>
+<h4>Image</h4> <img src="{{product.img}}" width="300" height="250">
+<h4>Status</h4>
+<p *ngIf="product.status" style="color: blue">Có hàng</p>
+<p *ngIf="!product.status" style="color: red">Hết hàng</p>
