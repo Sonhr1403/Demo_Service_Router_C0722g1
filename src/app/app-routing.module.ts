@@ -4,11 +4,13 @@ import {CreateComponent} from "./product/create/create.component";
 import {ShowComponent} from "./product/show/show.component";
 import {EditComponent} from "./product/edit/edit.component";
 import {DeleteComponent} from "./product/delete/delete.component";
+import {DetailComponent} from "./product/detail/detail.component";
 
 const routes: Routes = [
   { path: 'create', component: CreateComponent },
   { path: 'edit', component: EditComponent },
   { path: 'delete', component: DeleteComponent },
+  { path: 'detail', component: DetailComponent },
   { path: 'show', component: ShowComponent},
   { path: '', component: ShowComponent},
 ];

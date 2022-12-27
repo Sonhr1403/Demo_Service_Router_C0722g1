@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {ProductService} from "../../service/product.service";
-import {Product} from "../../model/Product";
 import {Router} from "@angular/router";
 
 @Component({
@@ -26,5 +25,10 @@ export class ShowComponent implements OnInit {
   showDelete(index : number) : void{
     this.productService.showDelete(index);
     this.router.navigate(["/delete"]);
+  }
+
+  showDetail(index : number) : void{
+    this.productService.showDetail(index);
+    this.router.navigate(["/detail"]);
   }
 }
