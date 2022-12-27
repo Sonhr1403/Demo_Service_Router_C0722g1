@@ -1,10 +1,9 @@
-<h1>Create Product</h1>
+<h1>Edit Product</h1>
 <input [(ngModel)]="product.name"><br>
 <input [(ngModel)]="product.price"><br>
 <input [(ngModel)]="product.img"><br>
-<!--<input [(ngModel)]="product.status"><br>-->
 <select [(ngModel)]="product.status">
   <option [ngValue]="true" >Có hàng</option>
   <option [ngValue]="false" >Hết hàng</option>
-</select>
-<button (click)="create()">Create</button>
+</select><br>
+<button (click)="edit()">Edit</button>

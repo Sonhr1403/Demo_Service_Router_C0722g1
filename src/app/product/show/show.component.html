@@ -17,8 +17,10 @@
     <td>{{p.price}}</td>
     <td *ngIf="p.status" style="color: blue">Có hàng</td>
     <td *ngIf="!p.status" style="color: red">Hết hàng</td>
-    <td><button type="button" class="btn btn-warning" >Edit</button></td>
-    <td><button type="button" class="btn btn-danger" (click)="delete(i)">Delete</button></td>
+<!--    <td *ngIf="p.status.toString() == 'true'" style="color: blue">Có hàng</td>-->
+<!--    <td *ngIf="p.status.toString() == 'false'" style="color: red">Hết hàng</td>-->
+    <td><a type="button" class="btn btn-warning" (click)="showEdit(i)" >Edit</a></td>
+    <td><button type="button" class="btn btn-danger" (click)="showDelete(i)">Delete</button></td>
   </tr>
   </tbody>
 </table>
